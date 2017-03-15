@@ -1,7 +1,11 @@
 html {
 font-szie: 10px;
 font-family: 'Slabo 27px', serif;
-background-color: #DDEBF3;
+}
+
+html {
+	background-color: #DDEBF3;
+}
 
 h1 {
 	font size: 60px;
@@ -14,4 +18,10 @@ line-height: 2;
 letter-spacing: normal;
 }
 
+body {
+width: 600px;
+margin: 0 auto;
+background-color: #F0FFFF;
+padding: 0 20px 20px 20px;
+border: 5px solid black;
 }
