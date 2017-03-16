@@ -8,3 +8,19 @@ myImage.onclick = function() {
       myImage.setAttribute ('src','images/sweetbike.jpg');
     }
 }
+var myButton = document.querySelector('button');
+var myHeading = document.querySelector('h1');
+function setUserName() {
+    var myName = prompt('Please enter your name.');
+    localStorage.setItem('name', myName);
+    myHeading.textContent = 'Keep Holy Rollin, ' + myName;
+}
+if(!localStorage.getItem('name')) {
+  setUserName();
+} else {
+  var storedName = localStorage.getItem('name')
+  myHeading.textContent = 'Keep Holy Rollin, ' + storedName;
+  }
+myButton.onclick = function() {
+  setUserName();
+}
